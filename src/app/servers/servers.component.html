@@ -1,8 +1,21 @@
 <label>Server Name</label>
+<br>
+<!--
+<label for="input0"></label>Inputfield with two-way-databinding<input
 <input
   type="text"
+  id="input0"
+  name="input0"
   class="form-control"
-  (input)="onUpdateServerName($event)">
+  (input)="onUpdateServerName($event)">-->
+
+<label for="input1"></label>Inputfield with two-way-databinding<input
+  type="text"
+  id="input1"
+  name="input1"
+  class="form-control"
+  [(ngModel)]="serverName">
+
 <p>{{ serverName }}</p>
 <p>servers.component.html</p>
 <button
