@@ -24,6 +24,16 @@
   (click)="onCreateServer()">Add Server</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <!-- <p>{{serverCreatingStatus}}</p> -->
+
 <p *ngIf="serverCreated">Server was created, servername is {{ serverName }}</p>
+<!--
+<p>Abschnitt 2, Lektion 36 - Enhancing ngIf with an Else Condition</p>
+<p *ngIf="serverCreated; else noServer">Server was created, servername is {{ serverName }}</p>
+<ng-template #noServer>
+  <p>NO Server was created!</p>
+</ng-template>
+-->
+
+
 <app-server></app-server>
 <app-server></app-server>
